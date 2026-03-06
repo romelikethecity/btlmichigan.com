@@ -31,8 +31,9 @@
   }
 
   function buildGoogleCalendarUrl(data) {
-    const start = toUTCString(data.event_date, data.event_time_start, data.event_timezone);
-    const end = toUTCString(data.event_date, data.event_time_end, data.event_timezone);
+    // Use local time format (no Z) with ctz parameter — Google interprets in event timezone
+    const start = toLocalDT(data.event_date, data.event_time_start);
+    const end = toLocalDT(data.event_date, data.event_time_end);
 
     const params = new URLSearchParams({
       action: 'TEMPLATE',
@@ -47,8 +48,8 @@
   }
 
   function downloadICS(data) {
-    const start = toICSDate(data.event_date, data.event_time_start, data.event_timezone);
-    const end = toICSDate(data.event_date, data.event_time_end, data.event_timezone);
+    const start = toLocalDT(data.event_date, data.event_time_start);
+    const end = toLocalDT(data.event_date, data.event_time_end);
     const now = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
 
     const ics = [
@@ -91,20 +92,8 @@
     URL.revokeObjectURL(url);
   }
 
-  /** Convert date + time + timezone to Google Calendar UTC format (YYYYMMDDTHHmmssZ) */
-  function toUTCString(dateStr, timeStr, tz) {
-    const dt = new Date(`${dateStr}T${timeStr}:00`);
-    // Use Intl to get offset, then convert to UTC
-    const utcStr = dt.toLocaleString('en-US', { timeZone: 'UTC' });
-    const localStr = dt.toLocaleString('en-US', { timeZone: tz });
-    const diff = new Date(localStr) - new Date(utcStr);
-    const utc = new Date(dt.getTime() - diff);
-
-    return utc.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
-  }
-
-  /** Convert to ICS local datetime format (YYYYMMDDTHHmmss) */
-  function toICSDate(dateStr, timeStr) {
+  /** Format date + time as local datetime (YYYYMMDDTHHmmss) — no Z suffix */
+  function toLocalDT(dateStr, timeStr) {
     return dateStr.replace(/-/g, '') + 'T' + timeStr.replace(/:/g, '') + '00';
   }
 })();

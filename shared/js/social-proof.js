@@ -30,24 +30,10 @@
     const total = counts.total || 0;
     const capacity = counts.capacity || 75;
     const remaining = Math.max(0, capacity - total);
-    const pct = Math.min(100, Math.round((total / capacity) * 100));
 
-    // Hero social proof (total) — show capacity meter always, text when >= 5
+    // Hero social proof — clean pill badge showing spots remaining
     document.querySelectorAll('[data-social-proof="hero"]').forEach(el => {
-      const textLine = total >= 5
-        ? `<span class="social-proof__dot"></span><span>${total} providers already registered</span>`
-        : '';
-      el.innerHTML = `
-        ${textLine}
-        <div style="background:var(--btl-light-bg);border-radius:var(--radius-md);padding:var(--space-md) var(--space-lg);margin-top:${textLine ? 'var(--space-sm)' : '0'};text-align:center;">
-          <div style="font-size:0.95rem;margin-bottom:var(--space-xs);">
-            <strong style="color:var(--warning);">${remaining} spots remaining</strong> out of ${capacity}
-          </div>
-          <div class="capacity-meter">
-            <div class="capacity-meter__fill${pct >= 80 ? ' capacity-meter__fill--high' : ''}" style="width:${pct}%;"></div>
-          </div>
-        </div>
-      `;
+      el.innerHTML = `<span>${remaining} spots remaining</span>`;
       el.hidden = false;
     });
 
