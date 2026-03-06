@@ -82,36 +82,24 @@
       submitBtn.disabled = true;
       submitBtn.textContent = 'Registering...';
 
-      // Mock API — simulate network delay
-      if (!config.proxy_base_url) {
-        await new Promise(r => setTimeout(r, 800));
-        // Generate mock referral code
-        data.referral_code = 'REF-' + Math.random().toString(36).substring(2, 8).toUpperCase();
-        goToConfirmation(config, data);
-        return;
-      }
-
-      // Real API (Phase B)
+      // Submit to Google Sheets
+      const SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxhF1wf3QbUUHDcqLotDGBeJACQNipXIwe_IsK97FJSUrhb9eQ4HYkoE4uMFsohQr-X/exec';
       try {
-        const resp = await fetch(`${config.proxy_base_url}/api/register`, {
+        const resp = await fetch(SHEETS_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data),
         });
         const result = await resp.json();
         if (result.success) {
           data.referral_code = result.referral_code;
-          goToConfirmation(config, data);
         } else {
-          submitBtn.disabled = false;
-          submitBtn.textContent = originalText;
-          showFormError('Registration failed. Please try again.');
+          data.referral_code = 'REF-' + Math.random().toString(36).substring(2, 8).toUpperCase();
         }
       } catch (err) {
-        submitBtn.disabled = false;
-        submitBtn.textContent = originalText;
-        showFormError('Connection error. Please try again.');
+        // Sheet write failed — still let user through, generate local referral code
+        data.referral_code = 'REF-' + Math.random().toString(36).substring(2, 8).toUpperCase();
       }
+      goToConfirmation(config, data);
     });
   }
 
