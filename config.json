@@ -7,7 +7,7 @@
   "event_description": "A full-day clinical education event with Harvard faculty, hands-on device demos, a personalized revenue workshop, and an evening cocktail party with DJ.",
   "date": "2026-03-21",
   "time_start": "09:00",
-  "time_end": "23:59",
+  "time_end": "22:00",
   "timezone": "America/Detroit",
   "location": {
     "venue": "Westin Book Cadillac",
