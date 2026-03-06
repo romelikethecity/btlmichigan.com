@@ -1064,8 +1064,12 @@ p {
 }
 
 .social-proof--hero {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.25);
   color: var(--btl-white);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  padding: 0.5rem 1.25rem;
+  border: 1px solid rgba(255,255,255,0.35);
 }
 
 .social-proof--hero .social-proof__dot {
