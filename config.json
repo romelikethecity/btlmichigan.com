@@ -326,7 +326,7 @@
   ],
 
   "post_event": {
-    "enabled": false,
+    "enabled": true,
     "lead_magnet_title": "BTL Practice Integration Guide",
     "lead_magnet_description": "A 12-page guide covering device selection, treatment room setup, staff training timelines, patient pricing strategies, and first-year ROI projections for each BTL platform.",
     "lead_magnet_file": ""

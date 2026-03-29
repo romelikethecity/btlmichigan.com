@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>You're Registered — BTL Body &amp; Mind Experience</title>
+  <title>Event Complete — BTL Body &amp; Mind Experience, Detroit</title>
+  <meta name="description" content="The BTL Body &amp; Mind Experience in Detroit has concluded. See upcoming BTL events in Minnesota and Ohio.">
   <link rel="icon" type="image/png" href="shared/assets/btl-icon-blue.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="shared/css/styles.css?v=1">
+  <link rel="stylesheet" href="shared/css/styles.css?v=2">
 
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JBED5M8NVG"></script>
@@ -18,25 +19,6 @@
   gtag('js', new Date());
   gtag('config', 'G-JBED5M8NVG');
   </script>
-
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1461790735280872');
-  fbq('track', 'PageView');
-  fbq('track', 'Lead');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=1461790735280872&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -47,60 +29,37 @@
     </div>
   </header>
 
-  <!-- Confirmation -->
+  <!-- Content -->
   <section class="confirmation">
     <div class="container container--narrow">
 
-      <!-- Success icon -->
       <div class="confirmation__icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="20 6 9 17 4 12"/>
         </svg>
       </div>
 
-      <h1 class="confirmation__title">You're registered</h1>
-      <p class="confirmation__subtitle" id="confirmation-subtitle">We'll see you there.</p>
+      <h1 class="confirmation__title">This event has concluded</h1>
+      <p class="confirmation__subtitle">The BTL Body &amp; Mind Experience in Detroit took place on March 21, 2026. Thank you to everyone who attended.</p>
 
-      <!-- Event details summary -->
-      <div style="background:var(--btl-light-bg);border-radius:var(--radius-md);padding:var(--space-lg);margin-bottom:var(--space-2xl);text-align:left;">
-        <div style="display:grid;gap:var(--space-sm);">
-          <div><strong>Event:</strong> <span id="conf-event-name"></span></div>
-          <div><strong>Date:</strong> <span id="conf-event-date"></span></div>
-          <div><strong>Time:</strong> <span id="conf-event-time"></span></div>
-          <div><strong>Venue:</strong> <span id="conf-event-venue"></span></div>
-          <div><strong>Address:</strong> <span id="conf-event-address"></span></div>
-        </div>
-        <div style="margin-top:var(--space-md);">
-          <a id="conf-maps-link" href="#" target="_blank" rel="noopener" class="btn btn--secondary btn--sm">Get Directions</a>
+      <div style="background:var(--btl-light-bg);border-radius:var(--radius-md);padding:var(--space-lg);margin:var(--space-xl) 0;text-align:left;">
+        <h3 style="margin-bottom:var(--space-md);color:var(--btl-primary);">Upcoming BTL Events</h3>
+        <div style="display:grid;gap:var(--space-md);">
+          <div>
+            <strong>Minnesota — April 11, 2026</strong>
+            <p class="text-muted" style="margin-top:var(--space-xs);">Full-day clinical education, hands-on device demos, revenue workshop, and evening party.</p>
+            <a href="https://btlminnesota.com" class="btn btn--primary btn--sm" style="margin-top:var(--space-sm);" target="_blank" rel="noopener">Register for Minnesota</a>
+          </div>
+          <div style="margin-top:var(--space-md);">
+            <strong>Ohio — April 25, 2026</strong>
+            <p class="text-muted" style="margin-top:var(--space-xs);">Full-day clinical education, hands-on device demos, revenue workshop, and evening party.</p>
+            <a href="https://btlohio.com" class="btn btn--primary btn--sm" style="margin-top:var(--space-sm);" target="_blank" rel="noopener">Register for Ohio</a>
+          </div>
         </div>
       </div>
 
-      <!-- Calendar -->
-      <h3 style="margin-bottom:var(--space-md);">Add to your calendar</h3>
-      <div class="calendar-buttons">
-        <button id="btn-gcal" class="btn btn--primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          Google Calendar
-        </button>
-        <button id="btn-ics" class="btn btn--secondary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          Download .ics
-        </button>
-      </div>
-
-      <!-- Referral -->
-      <div class="referral-card" style="margin-top:var(--space-2xl);">
-        <h3 class="referral-card__title">Bring a colleague</h3>
-        <p class="referral-card__text">Share your personalized link. Each person needs their own registration.</p>
-        <div class="referral-url-box">
-          <input type="text" id="referral-url" readonly aria-label="Referral URL">
-          <button id="btn-copy-referral" class="btn btn--secondary btn--sm">Copy</button>
-        </div>
-        <div class="share-buttons">
-          <a id="btn-email-share" href="#" class="btn btn--secondary btn--sm">Email</a>
-          <a id="btn-sms-share" href="#" class="btn btn--secondary btn--sm">Text</a>
-          <button id="btn-native-share" class="btn btn--primary btn--sm" hidden>Share</button>
-        </div>
+      <div style="text-align:center;margin-top:var(--space-lg);">
+        <a href="event-recap.html" class="btn btn--secondary">View Detroit Event Recap</a>
       </div>
 
     </div>
@@ -111,62 +70,9 @@
     <div class="container">
       <img src="shared/assets/btl-logo-white.svg" alt="BTL Industries" class="footer__logo">
       <p>BTL Industries — Medical and Aesthetics Innovations</p>
+      <p style="margin-top:var(--space-sm);">&copy; 2026 BTL Industries. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- Scripts -->
-  <script src="shared/js/calendar.js"></script>
-  <script src="shared/js/referral.js"></script>
-  <script>
-    // Hydrate confirmation page from sessionStorage
-    document.addEventListener('DOMContentLoaded', () => {
-      const data = JSON.parse(sessionStorage.getItem('btl_registration') || 'null');
-      if (!data) {
-        // No registration data — redirect back
-        window.location.href = 'index.html';
-        return;
-      }
-
-      // Personalized subtitle
-      const subtitle = document.getElementById('confirmation-subtitle');
-      if (subtitle && data.first_name) {
-        subtitle.textContent = `${data.first_name}, we'll see you there.`;
-      }
-
-      // Event details
-      const setEl = (id, text) => {
-        const el = document.getElementById(id);
-        if (el) el.textContent = text;
-      };
-
-      setEl('conf-event-name', data.event_name);
-      setEl('conf-event-venue', data.event_venue);
-      setEl('conf-event-address', data.event_address);
-
-      // Format date
-      if (data.event_date) {
-        const d = new Date(data.event_date + 'T12:00:00');
-        setEl('conf-event-date', d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }));
-      }
-
-      // Format time
-      if (data.event_time_start && data.event_time_end) {
-        const fmt = (t) => {
-          const [h, m] = t.split(':').map(Number);
-          const ampm = h >= 12 ? 'PM' : 'AM';
-          const hour = h > 12 ? h - 12 : h === 0 ? 12 : h;
-          return `${hour}:${m.toString().padStart(2, '0')} ${ampm}`;
-        };
-        setEl('conf-event-time', `${fmt(data.event_time_start)} – ${fmt(data.event_time_end)}`);
-      }
-
-      // Maps link
-      const mapsLink = document.getElementById('conf-maps-link');
-      if (mapsLink && data.event_maps_url) {
-        mapsLink.href = data.event_maps_url;
-      }
-    });
-  </script>
 
 </body>
 </html>
