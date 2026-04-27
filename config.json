@@ -99,11 +99,16 @@
         "practice": "Great Lakes Chiropractic, Troy MI"
       },
       "talking_points": [
-        "New revenue stream — no insurance billing headaches",
-        "Emsella treats urinary incontinence (68% improvement at 6 months)",
+        "Fully delegable — your existing staff runs both devices after brief training, no physician time required",
+        "Emsculpt Neo post-surgical rehab: 52% more muscle strength, 82% improved range of motion (BTL clinical data)",
+        "New revenue stream — no insurance billing, no pre-auth, no coding headaches",
+        "Emsella treats urinary incontinence (68% improvement at 6 months, published data)",
         "Emsculpt Neo: 25% more muscle, 30% less fat in 30-minute sessions",
         "Patients stay fully clothed during Emsella — zero procedure room setup",
-        "New patient demographic that cross-refers to your core services"
+        "New patient demographic (women 35-65) that cross-refers to your adjustment services",
+        "83% of patients reported muscle re-education — accelerates recovery for post-injury chiropractic patients",
+        "FDA-cleared for muscle rehabilitation and post-surgical recovery since October 2024",
+        "Published clinical data presented by Harvard faculty at the event"
       ]
     },
     "medspa": {
@@ -216,20 +221,48 @@
     },
     "psychiatry": {
       "name": "Neuro / Psychiatry",
-      "headline": "FDA-cleared TMS for treatment-resistant depression — drug-free, under 30 minutes",
-      "subheadline": "EXOMIND uses patented ExoTMS technology to treat Major Depressive Disorder. Noninvasive, operator-independent, and produces results in as few as six sessions.",
-      "products": ["exomind"],
+      "headline": "Two FDA-cleared platforms — TMS for depression, HIFEM for neurological rehabilitation",
+      "subheadline": "EXOMIND treats Major Depressive Disorder with ExoTMS. Emsculpt Neo rebuilds muscle for post-stroke, post-surgical, and neuropathy patients — 52% more strength, 82% improved range of motion. Both are fully delegable to your clinical team.",
+      "products": ["exomind", "emsculpt-neo"],
       "testimonial": {
         "quote": "For patients who've failed two or more medications, EXOMIND is the first thing that's worked. Six sessions in, I see changes in affect and engagement that medication adjustments never achieved.",
         "author": "Dr. Aaron Greenberg",
         "practice": "Michigan Psychiatric Associates, Southfield MI"
       },
       "talking_points": [
-        "FDA-cleared for Major Depressive Disorder in adults",
-        "Patented ExoTMS (Transcranial Magnetic Stimulation) technology",
-        "Drug-free and noninvasive — walk-in, walk-out sessions under 30 minutes",
-        "Results in as few as six treatments",
-        "Operator-independent — staff can administer after brief training"
+        "Fully delegable — both EXOMIND and Emsculpt Neo are staff-administered after brief training",
+        "EXOMIND: FDA-cleared for Major Depressive Disorder, patented ExoTMS technology",
+        "Drug-free, noninvasive TMS — results in as few as six sessions, under 30 minutes each",
+        "Emsculpt Neo: FDA-cleared for muscle rehabilitation and post-surgical recovery (October 2024)",
+        "52% more muscle strength and 82% improved range of motion (BTL functional wellness data)",
+        "83% of patients reported muscle re-education — improved motor control and coordination",
+        "Peripheral nerve stimulation for chronic intractable pain and diabetic peripheral neuropathy",
+        "No drug interactions for either platform — safe alongside existing medication regimens",
+        "Scales without adding physician hours — you supervise the plan, not each session",
+        "Published clinical data presented by Harvard faculty at the event"
+      ]
+    },
+    "pain-specialist": {
+      "name": "Pain Specialists",
+      "headline": "Fully delegable technology for pain relief and post-surgical muscle recovery",
+      "subheadline": "EMvital treats muscle and joint pain with zero drugs. Emsculpt Neo rebuilds muscle post-surgery with 52% strength gains and 82% improved range of motion. Both are fully delegable to your clinical staff.",
+      "products": ["emvital", "emsculpt-neo"],
+      "testimonial": {
+        "quote": "Most of my chronic pain patients have been through the full rotation — NSAIDs, injections, PT. EMvital gave them measurable relief in four sessions without adding another prescription. The referral pattern changed overnight.",
+        "author": "Dr. David Chen, DO",
+        "practice": "Midwest Pain & Rehabilitation Associates"
+      },
+      "talking_points": [
+        "Fully delegable — both devices are staff-administered after brief training, no physician time per session",
+        "Emsculpt Neo post-surgical rehab: 52% more muscle strength vs baseline (BTL clinical data)",
+        "82% of patients reported improved range of motion after Emsculpt Neo functional wellness protocol",
+        "83% reported muscle re-education — improved control and coordination post-surgery",
+        "FDA-cleared for muscle rehabilitation, injury prevention, and post-surgical recovery (October 2024)",
+        "EMvital: FDA-cleared for temporary relief of muscle and joint pain, stiffness, arthritis pain, and muscle spasm",
+        "Non-pharmacological — no opioid concerns, no drug interactions, no systemic side effects",
+        "Under 30 minutes per session for both devices, no downtime — patients return to normal activity immediately",
+        "No consumables, no per-treatment costs after acquisition for either device",
+        "Published clinical data presented by Harvard faculty at the event"
       ]
     }
   },
